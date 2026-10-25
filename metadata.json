@@ -1,0 +1,7 @@
+{
+  "name": "Chirkut - চিরকুট",
+  "description": "একটি মুহূর্ত, একটি স্থান, একটি অনুভূতি — শিল্প, সুবাস এবং স্মৃতির চিরকুট সংকলন।",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
+

@@ -1,0 +1,69 @@
+@import "tailwindcss";
+
+@theme {
+  --font-serif: "Cormorant Garamond", "Noto Serif Bengali", Georgia, serif;
+  --font-display: "Playfair Display", "Noto Serif Bengali", serif;
+  --font-handwriting: "Caveat", cursive;
+  --font-sans: "Plus Jakarta Sans", system-ui, -apple-system, sans-serif;
+  --font-bengali: "Noto Serif Bengali", serif;
+}
+
+@layer base {
+  body {
+    font-family: var(--font-sans);
+    background-color: #14110F;
+    color: #E8DFD8;
+    overflow-x: hidden;
+  }
+
+  h1, h2, h3, .font-serif-luxury {
+    font-family: var(--font-serif);
+  }
+}
+
+/* Custom delicate styling */
+.font-handwritten {
+  font-family: var(--font-handwriting);
+}
+
+.paper-grain {
+  background-color: #f7f3ec;
+  background-image: radial-gradient(#d6cbbf 0.75px, transparent 0.75px), radial-gradient(#d6cbbf 0.75px, #f7f3ec 0.75px);
+  background-size: 30px 30px;
+  background-position: 0 0, 15px 15px;
+}
+
+.paper-dark-grain {
+  background-color: #1b1714;
+  background-image: radial-gradient(#2d2722 0.75px, transparent 0.75px);
+  background-size: 24px 24px;
+}
+
+/* Subtle glow effects */
+.gold-glow {
+  text-shadow: 0 0 24px rgba(212, 175, 55, 0.25);
+}
+
+.gold-border {
+  border-color: rgba(200, 169, 126, 0.3);
+}
+
+.gold-border-hover:hover {
+  border-color: rgba(224, 192, 147, 0.7);
+  box-shadow: 0 0 20px rgba(197, 168, 128, 0.15);
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #14110F;
+}
+::-webkit-scrollbar-thumb {
+  background: #362E28;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #594D43;
+}

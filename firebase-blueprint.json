@@ -1,0 +1,45 @@
+{
+  "entities": {
+    "User": {
+      "collection": "users",
+      "fields": {
+        "id": { "type": "string", "description": "User unique identifier (UID)" },
+        "name": { "type": "string", "description": "Display name" },
+        "email": { "type": "string", "description": "User email address" },
+        "avatar": { "type": "string", "description": "Avatar URL or preset" },
+        "bio": { "type": "string", "description": "Short bio or tagline" },
+        "createdAt": { "type": "string", "description": "Creation timestamp" }
+      }
+    },
+    "Chirkut": {
+      "collection": "chirkuts",
+      "fields": {
+        "id": { "type": "string", "description": "Note/Post ID" },
+        "quote": { "type": "string", "description": "Note text content" },
+        "author": { "type": "string", "description": "Author display name" },
+        "authorId": { "type": "string", "description": "Author user ID if logged in" },
+        "authorAvatar": { "type": "string", "description": "Author avatar URL" },
+        "location": { "type": "string", "description": "Place or city" },
+        "category": { "type": "string", "description": "Category (scent, memory, rain, love, solitude)" },
+        "paperColor": { "type": "string", "description": "Paper aesthetic color" },
+        "bgImageUrl": { "type": "string", "description": "Background image URL or AI generated" },
+        "videoUrl": { "type": "string", "description": "Uploaded or linked video URL" },
+        "likesCount": { "type": "number", "description": "Count of likes" },
+        "reactions": { "type": "map", "description": "Reaction counts breakdown" },
+        "createdAt": { "type": "string", "description": "Timestamp" }
+      }
+    },
+    "Story": {
+      "collection": "stories",
+      "fields": {
+        "id": { "type": "string", "description": "Story ID" },
+        "authorName": { "type": "string", "description": "Author name" },
+        "authorAvatar": { "type": "string", "description": "Author avatar" },
+        "text": { "type": "string", "description": "Story content text" },
+        "bgImage": { "type": "string", "description": "Story background image or gradient" },
+        "videoUrl": { "type": "string", "description": "Video story if any" },
+        "createdAt": { "type": "number", "description": "Timestamp ms" }
+      }
+    }
+  }
+}
